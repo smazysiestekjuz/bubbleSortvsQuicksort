@@ -11,6 +11,14 @@ int main()
     cout <<"Ile losowych liczb w tablicy: ";
     cin>>ile;
 
+    //dynamiczna alokacja tablicy
+    int *tablica;
+    tablica=new int[ile];
+
+
+
+    delte [] tablica;
+
 
 
     return 0;
