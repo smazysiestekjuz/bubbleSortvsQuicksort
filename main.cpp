@@ -46,12 +46,15 @@ int main()
         //cout<<tablica[i]<<" ";
     }
 
-
     cout<<"Sortuje teraz babelkowo. Prosze czekac!"<<endl;
 
     start = clock();
 
     sortowanie_babelkowe(tablica,ile);
+
+    stop = clock();
+
+    czas = (double)(stop-start) / CLOCKS_PER_SEC;
 
     delete [] tablica;
 
