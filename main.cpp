@@ -14,7 +14,7 @@ void sortowanie_babelkowe(int *tab, int n)
     {
         for(int j=n-1; j>=1; j--)
         {
-            if(tab[j]>tab[j-1])
+            if(tab[j]<tab[j-1])
             {
                 int bufor;
                 bufor=tab[j-1];
