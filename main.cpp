@@ -5,6 +5,8 @@
 using namespace std;
 
 int ile;
+clock_t start,stop;
+double czas;
 
 void sortowanie_babelkowe(int *tab, int n)
 {
