@@ -4,6 +4,7 @@ using namespace std;
 
 int main()
 {
-    cout << "Hello world!" << endl;
+    cout << "Porownanie czasow sortowania v.1" << endl;
+
     return 0;
 }
