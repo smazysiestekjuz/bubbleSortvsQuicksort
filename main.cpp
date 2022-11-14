@@ -25,6 +25,30 @@ void sortowanie_babelkowe(int *tab, int n)
     }
 }
 
+void quicksort(int *tablica, int lewy, int prawy)
+{
+    int v=tablica[(lewy+prawy)/2];
+    int i,j,x;
+    i=lewy;
+    j=prawy;
+    do
+    {
+        while(tablica[i]<v) i++;
+        while(tablica[j]>v) j--;
+        if(i<=j)
+        {
+            x=tablica[i];
+            tablica[i]=tablica[j];
+            tablica[j]=x;
+            i++;
+            j--;
+        }
+    }
+    while(i<=j);
+    if(j>lewy) quicksort(tablica, lewy, j);
+    if(i<prawy) quicksort(tablica, i, prawy);
+}
+
 int main()
 {
     cout << "Porownanie czasow sortowania v.1" << endl;
@@ -53,13 +77,9 @@ int main()
 */
 
     cout<<"Sortuje teraz babelkowo. Prosze czekac!"<<endl;
-
     start = clock();
-
     sortowanie_babelkowe(tablica,ile);
-
     stop = clock();
-
     czas = (double)(stop-start) / CLOCKS_PER_SEC;
 /*
     cout<<"Po posortowaniu: "<<endl;
@@ -71,8 +91,6 @@ int main()
     cout<<endl<<"Czas sortowania babelkowego: "<<czas<<" s"<<endl;
 
     delete [] tablica;
-
-
 
     return 0;
 }
