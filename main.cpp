@@ -60,6 +60,9 @@ int main()
     int *tablica;
     tablica=new int[ile];
 
+    int *tablica2;
+    tablica2=new int [ile];
+
     //inicjowanie generatora
     srand(time(NULL));
 
