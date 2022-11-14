@@ -49,6 +49,8 @@ int main()
 
     cout<<"Sortuje teraz babelkowo. Prosze czekac!"<<endl;
 
+    start = clock();
+
     delete [] tablica;
 
 
