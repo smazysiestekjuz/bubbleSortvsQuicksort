@@ -71,6 +71,15 @@ int main()
     {
         tablica[i] = rand()%100000+1;
     }
+
+    //przepisanie tablicy do tablicy2
+    for(int i=0; i<ile; i++)
+    {
+        tablica2[i]=tablica[i];
+    }
+
+
+
 /*
     cout<<"Przed posortowaniem: "<<endl;
     for(int i=0; i<ile; i++)
@@ -94,6 +103,7 @@ int main()
     cout<<endl<<"Czas sortowania babelkowego: "<<czas<<" s"<<endl;
 
     delete [] tablica;
+    delete [] tablica2;
 
     return 0;
 }
