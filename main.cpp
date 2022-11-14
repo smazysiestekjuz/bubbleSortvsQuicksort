@@ -6,6 +6,11 @@ using namespace std;
 
 int ile;
 
+void sortowanie_babelkowe(int *tab, int n)
+{
+
+}
+
 int main()
 {
     cout << "Porownanie czasow sortowania v.1" << endl;
