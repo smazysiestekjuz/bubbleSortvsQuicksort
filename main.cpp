@@ -17,6 +17,9 @@ int main()
     int *tablica;
     tablica=new int[ile];
 
+    //inicjowanie generatora
+    srand(time(NULL));
+
 
 
     delte [] tablica;
