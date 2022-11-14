@@ -20,6 +20,13 @@ int main()
     //inicjowanie generatora
     srand(time(NULL));
 
+    //wczytywanie losowych liczb do tablicy
+    for(int i=0; i<ile; i++)
+    {
+        tablica[i] = rand()%100000+1;
+    }
+
+
 
 
     delte [] tablica;
