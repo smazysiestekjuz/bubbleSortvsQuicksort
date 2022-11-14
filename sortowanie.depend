@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1668433446 source:d:\codeblocks\sortowanie\main.cpp
+	<iostream>
+	<time.h>
+	<windows.h>
+

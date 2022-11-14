@@ -84,7 +84,7 @@ int main()
     cout<<"Przed posortowaniem: "<<endl;
     for(int i=0; i<ile; i++)
     {
-        cout<<tablica[i]<<" ";
+        cout<<tablica2[i]<<" ";
     }
 */
 
@@ -93,14 +93,22 @@ int main()
     sortowanie_babelkowe(tablica,ile);
     stop = clock();
     czas = (double)(stop-start) / CLOCKS_PER_SEC;
+    cout<<endl<<"Czas sortowania babelkowego: "<<czas<<" s"<<endl;
+
+
+    cout<<endl<<"Sortuje teraz algorytmem quicksort. Prosze czekac!"<<endl;
+    start = clock();
+    quicksort(tablica2, 0, ile-1);
+    stop = clock();
+    czas = (double)(stop-start) / CLOCKS_PER_SEC;
+    cout<<endl<<"Czas sortowania quicksort: "<<czas<<" s"<<endl;
 /*
     cout<<"Po posortowaniu: "<<endl;
     for(int i=0; i<ile; i++)
     {
-        cout<<tablica[i]<<" ";
+        cout<<tablica2[i]<<" ";
     }
 */
-    cout<<endl<<"Czas sortowania babelkowego: "<<czas<<" s"<<endl;
 
     delete [] tablica;
     delete [] tablica2;
