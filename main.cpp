@@ -51,6 +51,8 @@ int main()
 
     start = clock();
 
+    sortowanie_babelkowe(tablica,ile);
+
     delete [] tablica;
 
 
