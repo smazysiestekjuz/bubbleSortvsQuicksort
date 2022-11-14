@@ -43,11 +43,11 @@ int main()
     for(int i=0; i<ile; i++)
     {
         tablica[i] = rand()%100000+1;
-        cout<<tablica[i]<<" ";
+        //cout<<tablica[i]<<" ";
     }
 
 
-
+    cout<<"Sortuje teraz babelkowo. Prosze czekac!"<<endl;
 
     delete [] tablica;
 
