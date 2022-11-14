@@ -56,6 +56,8 @@ int main()
 
     czas = (double)(stop-start) / CLOCKS_PER_SEC;
 
+    cout<<endl<<"Czas sortowania babelkowego: "<<czas<<" s"<<endl;
+
     delete [] tablica;
 
 
