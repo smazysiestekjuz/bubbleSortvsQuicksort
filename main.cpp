@@ -78,8 +78,6 @@ int main()
         tablica2[i]=tablica[i];
     }
 
-
-
 /*
     cout<<"Przed posortowaniem: "<<endl;
     for(int i=0; i<ile; i++)
